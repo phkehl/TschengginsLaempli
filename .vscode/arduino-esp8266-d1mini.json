@@ -1,0 +1,8 @@
+{
+    "sketch": "TschengginsLaempli.ino",
+    "board": "esp8266:esp8266:d1_mini",
+    "configuration": "xtal=80,vt=flash,exception=enabled,ssl=basic,eesz=4M2M,ip=lm2f,dbg=Serial,lvl=None____,wipe=none,baud=3000000",
+    "port": "/dev/ttyUSB0",
+    "output": "build-esp8266-d1mini",
+    "prebuild": "perl tools/gen_config_h.pl"
+}

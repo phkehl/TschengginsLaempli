@@ -1,0 +1,52 @@
+{
+    "configurations": [
+        {
+            "name": "ESP32-Linux",
+            "includePath": [
+                "${env:HOME}/.arduino15/packages/esp32/tools/**",
+                "${env:HOME}/.arduino15/packages/esp32/hardware/esp32/1.0.4/**",
+                "${env:HOME}/arduino/libraries/**",
+            ],
+            "forcedInclude": [],
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "defines": [
+                "ESP32"
+            ]
+        },
+        {
+            "name": "ESP8266-Linux",
+            "includePath": [
+                "${env:HOME}/.arduino15/packages/esp8266/tools/**",
+                "${env:HOME}/.arduino15/packages/esp8266/hardware/esp8266/2.6.3/**",
+                "${env:HOME}/arduino/libraries/**"
+            ],
+            "forcedInclude": [],
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "defines": [
+                "ESP8266",
+                "__ets__",
+                "ICACHE_FLASH"
+            ]
+        },
+        {
+            "name": "ESP8266-Win32",
+            "includePath": [
+                "C:\\Users\\pkeh\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\**",
+                "C:\\Users\\pkeh\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.6.3\\**"
+            ],
+            "forcedInclude": [],
+            "defines": [
+                "ESP8266",
+                "__ets__",
+                "ICACHE_FLASH"
+            ]
+        }
+    ],
+    "version": 4
+}

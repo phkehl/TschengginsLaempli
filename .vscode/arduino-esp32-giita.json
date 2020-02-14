@@ -1,0 +1,8 @@
+{
+    "sketch": "TschengginsLaempli.ino",
+    "board": "esp32:esp32:esp32",
+    "configuration": "PSRAM=disabled,PartitionScheme=minimal,CPUFreq=160,FlashMode=dio,FlashFreq=40,FlashSize=2M,UploadSpeed=921600,DebugLevel=debug",
+    "port": "/dev/ttyUSB0",
+    "output": "build-esp32-gitta",
+    "prebuild": "perl tools/gen_config_h.pl esp32-gitta"
+}
