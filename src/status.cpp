@@ -69,6 +69,13 @@ static void sStatusLedTimerFunc(void)
 
 void statusLed(const STATUS_LED_t status)
 {
+    static STATUS_LED_t sStatusOld = (STATUS_LED_t)99;
+    if (status == sStatusOld)
+    {
+        return;
+    }
+    sStatusOld = status;
+
     digitalWrite(CONFIG_STATUS_LED_PIN, LED_OFF);
     
     switch (status)
